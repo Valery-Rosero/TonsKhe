@@ -1,0 +1,105 @@
+.bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(60, 10, 30, 0.55);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal {
+  background: #fff9fb;
+  border-radius: 1.75rem;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  border: 1px solid rgba(180, 100, 130, 0.25);
+  animation: popIn 0.22s ease;
+  position: relative;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.82); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #c0809a;
+}
+
+.icon {
+  font-size: 2.8rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(139, 34, 82, 0.1);
+  color: #8B2252;
+  border-radius: 2rem;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: #5a1a3a;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.msg {
+  font-size: 0.9rem;
+  color: #6a3050;
+  line-height: 1.75;
+  font-style: italic;
+  background: linear-gradient(135deg, #fdf0f5, #fde8e8);
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid rgba(139, 34, 82, 0.28);
+  text-align: left;
+}
+
+.useBtn {
+  background: linear-gradient(135deg, #8B2252, #c0507a);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.18s;
+  font-family: 'Lato', sans-serif;
+}
+
+.useBtn:hover { opacity: 0.87; transform: scale(1.03); }
+.useBtn:disabled { opacity: 0.5; cursor: default; transform: none; }
+
+.usedTag {
+  display: inline-block;
+  background: rgba(180, 100, 130, 0.12);
+  color: #a06080;
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

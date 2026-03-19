@@ -1,0 +1,104 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fdf6f0 0%, #fde8e8 50%, #f8d7e8 100%);
+}
+
+.box {
+  background: #fff9fb;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(180, 100, 130, 0.25);
+  padding: 2.5rem 2rem;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+}
+
+.icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  animation: sway 2.5s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  color: #8B2252;
+  margin-bottom: 0.4rem;
+}
+
+.sub {
+  font-size: 0.85rem;
+  color: #a06080;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+  border: 1.5px solid rgba(180, 100, 130, 0.35);
+  background: #fff;
+  font-size: 1rem;
+  color: #5a1a3a;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 0.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.input:focus { border-color: #8B2252; }
+.inputError { border-color: #e24b4a !important; }
+
+.errorMsg {
+  font-size: 0.78rem;
+  color: #c0507a;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  width: 100%;
+  background: linear-gradient(135deg, #8B2252, #c0507a);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn:hover { opacity: 0.88; transform: scale(1.02); }
+
+.hint {
+  font-size: 0.72rem;
+  color: #c0a0b0;
+  font-style: italic;
+}
