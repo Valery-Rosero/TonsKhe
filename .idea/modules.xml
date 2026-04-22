@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TonsKhe.iml" filepath="$PROJECT_DIR$/.idea/TonsKhe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tons_khe.iml" filepath="$PROJECT_DIR$/tons_khe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/tons_khe_android.iml" filepath="$PROJECT_DIR$/android/tons_khe_android.iml" />
     </modules>
   </component>
 </project>
