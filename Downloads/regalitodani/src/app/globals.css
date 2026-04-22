@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #fdf6f0;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --rose: #8B2252;
+  --rose-light: #c0507a;
+  --rose-pale: #fde8e8;
+  --rose-muted: #a06080;
+  --rose-hint: #c0809a;
+  --text-dark: #5a1a3a;
+  --text-mid: #6a3050;
+}
